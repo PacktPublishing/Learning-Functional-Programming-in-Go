@@ -1,0 +1,6 @@
+package: .
+import:
+- package: github.com/admobi/easy-metrics
+ignore:
+- ./decorator
+- ./easy_metrics

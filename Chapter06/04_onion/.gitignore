@@ -1,0 +1,9 @@
+.idea/
+pkg/
+downloads/
+onion
+keys/
+trace*-log.txt
+src/lex/
+vendors/
+glide.*

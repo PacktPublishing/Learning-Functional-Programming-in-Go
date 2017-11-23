@@ -1,0 +1,10 @@
+hash: 63ffd922d495a52ce8d0b01a9a6016e2a235e54c9d1a638c9ff0822810395969
+updated: 2017-08-24T14:52:13.387967712-04:00
+imports:
+- name: github.com/go-functional/core
+  version: 2963c8ec15f6816f877d6f78bce2429bfce1c28d
+  subpackages:
+  - functor
+  - typeclass
+  - util
+testImports: []

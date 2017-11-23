@@ -1,0 +1,89 @@
+#!/bin/bash
+# Author : Lex Sheehan
+# Purpose: This script initializes a go project with glide dependency management
+#
+# This script will:
+# 1) create a link to this project root directory in your MY_DEV_DIR directory
+# 2) verify that you are running the correct version of go
+# 3) verify that you have a toml config file (if you set USES_TOML_CONFIG_YN=yes)
+# 4) verify that you have glide installed
+# 5) verify that you have a src directory (it will create one if you don't have one)
+# 6) create aliases for your convenience
+#
+# Notes:
+# 1) Source this file.  Run it like this:  source init
+# 2) Required dependency: https://github.com/Masterminds/glide
+# 3) Optional dependency: https://github.com/l3x/goenv
+# 4) Glide commands must be run real directory (not a linked one)
+#
+# License: MIT, 2017 Lex Sheehan LLC
+MY_DEV_DIR=~/dev
+CURRENT_GO_VERSION=1.9
+USES_TOML_CONFIG_YN=no
+# ---------------------------------------------------------------
+# Verify variables above are correct.  Do not modify lines below.
+if [ -L "$(pwd)" ]; then
+    echo "You must be in the real project directory to run this init script.  You are currently in a linked directory"
+    echo "Running:  ln -l \"$(pwd)\""
+    ls -l "$(pwd)"
+    return
+fi
+CURRENT_GOVERSION="go$CURRENT_GO_VERSION"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DEV_DIR="$MY_DEV_DIR/$(basename $DIR)"
+set -x
+PROJECT_DIR_LINK="$MY_DEV_DIR/$(basename $DIR)"
+{ set +x; } 2>/dev/null
+if [ -L "$PROJECT_DIR_LINK" ]; then
+    rm "$PROJECT_DIR_LINK"
+fi
+if [ ! -d "$MY_DEV_DIR" ]; then
+    mkdir "$MY_DEV_DIR"
+fi
+# Create link to project directory in MY_DEV_DIR
+set -x
+ln -s "$DIR" "$PROJECT_DIR_LINK"
+{ set +x; } 2>/dev/null
+cd "$PROJECT_DIR_LINK"
+export GOPATH=$DIR
+APP_NAME=$(basename $(pwd))
+GOVERSION=$(go version)
+echo "Installed Go version: $GOVERSION"
+if [[ $(type goenv) ]]; then
+    # Attempt to automatically set desired/current go version.  This requires goenv.
+    . goenv "$CURRENT_GO_VERSION"
+    if [ -z "$GOVERSION" ] || [[ "$(echo $GOVERSION | awk '{print $3}')" != "$CURRENT_GOVERSION" ]]; then
+      echo "Expected Go version $CURRENT_GOVERSION to be installed"
+      return
+    fi
+else
+    if [ -z "$GOVERSION" ] || [[ "$(echo $GOVERSION | awk '{print $3}')" != "$CURRENT_GOVERSION" ]]; then
+        echo "Expected Go version $CURRENT_GOVERSION to be installed"
+        return
+    fi
+fi
+command -v glide >/dev/null 2>&1 || { echo >&2 "Missing glide.  For details, see: https://github.com/Masterminds/glide"; return; }
+if [ ! -e ./src ]; then
+    mkdir src
+fi
+if [ "${PATH/$GOBIN}" == "$PATH" ] ; then
+  export PATH=$PATH:$GOBIN
+fi
+if [[ "$USES_TOML_CONFIG_YN" =~ ^(yes|y)$ ]] && [ ! -e ./config.toml ]; then
+    echo You were missing the config.toml configuration file... Creating bare config.toml file ...
+    echo -e "# Runtime environment\napp_env = \"development\"" > config.toml
+    ls -l config.toml
+    alias go-run="go install && $APP_NAME -config ./config.toml"
+else
+    alias go-run="go install && $APP_NAME"
+fi
+alias glide-ignore-project-dirs="printf \"ignore:\n$(find ./src -maxdepth 1 -type d | tail -n +2 | sed 's|./src\/||' | sed -e 's/^/- \.\//')\n\""
+alias mvglide='mkdir -p vendors && mv vendor/ vendors/src/ && export GOPATH=$(pwd):$(pwd)/vendors;echo "vendor packages have been moved to $(pwd)/vendors and your GOPATH: $GOPATH"'
+alias glide-update='if [ ! -z $(readlink `pwd`) ]; then export LINKED=true && pushd "$(readlink `pwd`)"; fi;rm -rf {vendor,vendors};rm glide.*;export GOPATH=$(pwd):$(pwd)/vendors && export GOBIN=$(pwd)/bin && glide init --non-interactive && glide-ignore-project-dirs >> glide.yaml && glide up && mvglide && if [ $LINKED==true ]; then popd;fi'
+alias prune-project='(rm -rf bin pkg vendors;rm glide.lock) 2>/dev/null'
+alias tree2='tree -C -d -L 2'
+alias find-imports='find . -type f -name "*.go" -exec grep -A3 "import" {} \; -exec echo {} \; -exec echo --- \;'
+echo You should only need to run this init script once.
+echo Add Go source code files under the src directory.
+echo After updating dependencies, i.e., adding a new import statement, run:  glide-update
+echo To build and run your app, run:  go-run

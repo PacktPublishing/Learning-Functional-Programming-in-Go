@@ -1,0 +1,8 @@
+package: .
+import:
+- package: github.com/julienschmidt/httprouter
+- package: github.com/l3x/fp-in-go
+  subpackages:
+  - chapter9/01_hof
+ignore:
+- ./hof

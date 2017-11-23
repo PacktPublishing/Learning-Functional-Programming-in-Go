@@ -1,0 +1,6 @@
+hash: 89b928605a61ad578b5d53db62cabc2c4abc2fcb2bf72bf8ef1e04e7073d19f2
+updated: 2017-10-04T13:53:43.593531394-04:00
+imports:
+- name: github.com/admobi/easy-metrics
+  version: 5ed4e60cf060279052905ab7411b228ca17b0eaf
+testImports: []

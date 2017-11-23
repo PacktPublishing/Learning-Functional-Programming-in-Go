@@ -1,0 +1,8 @@
+package: .
+import:
+- package: github.com/BurntSushi/toml
+- package: github.com/pkg/errors
+- package: github.com/sirupsen/logrus
+ignore:
+- ./server
+- ./utils

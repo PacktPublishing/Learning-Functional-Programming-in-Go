@@ -1,0 +1,6 @@
+hash: f6b3a2dd121f9c6e5740b697ca5895a456ef44a9019cb5061f0afa13fc1501d5
+updated: 2017-10-04T18:57:29.056223767-04:00
+imports:
+- name: github.com/go-goodies/go_currency
+  version: bf5e29957fc495f772d938b17185d50de8f36fd0
+testImports: []

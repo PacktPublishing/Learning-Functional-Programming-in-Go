@@ -1,0 +1,10 @@
+hash: a0fcf3a6183f8cabd79714b20ba31c7a704544e8dc016086809a25ecd8b7d519
+updated: 2017-10-03T19:04:05.145422547-04:00
+imports:
+- name: github.com/go-goodies/go_utils
+  version: 8080b1735a88ccb3a2bb26f32bad85315797ddf2
+- name: github.com/margnus1/go-deepcopy
+  version: e90e9caf2f249f9b952935f1ed9a93a941d6c38a
+- name: github.com/nu7hatch/gouuid
+  version: 179d4d0c4d8d407a32af483c2354df1d2c91e6c3
+testImports: []
