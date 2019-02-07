@@ -1,0 +1,138 @@
+Skip to content
+Your account has been flagged.
+Because of that, your profile is hidden from the public. If you believe this is a mistake, contact support to have your account status reviewed.
+
+track files onion
+Repositories0
+Code90K
+Commits505
+Issues341
+Marketplace0
+Topics0
+Wikis393
+Users0
+Language
+
+Sort
+
+90,481 code results
+@PacktPublishing
+PacktPublishing/Learning-Functional-Programming-in-Go – config.toml
+Showing the top four matches
+Last indexed on Jul 11, 2018
+TOML
+project_root_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion"
+
+# Where files are downloaded
+download_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion/downloads"
+
+# Parent folders for the log files on Google Cloud Storage
+@CodeFreezr
+CodeFreezr/gobyes – config.toml
+Showing the top four matches
+Last indexed on Jul 12, 2018
+TOML
+project_root_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion"
+
+# Where files are downloaded
+download_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion/downloads"
+
+# Parent folders for the log files on Google Cloud Storage
+@Hrafael
+Hrafael/hrafael.github.io – sale.oembed
+Showing the top match
+Last indexed on Jun 30, 2018
+{"title":"Sale","description":"","products":[{"product_id":"tube","title":"Tube","description":"\u003cp\u003eWelsh onion pea sprouts ricebean chickweed tigernut gumbo watercress rock melon. Artichoke epazote collard greens garbanzo celery coriander quandong napa cabbage winter purslane gourd corn aubergine garlic eggplant. Bush tomato chicory avocado bitterleaf melon rutabaga okra burdock sweet pepper salad.\u003c\/p\u003e","brand":"Duke","offers":[{"title":"Default Title","offer_id":324815885,"sku":"","price":45.0,"currency_code":"GBP","in_stock":true}],"thumbnail_url":"\/\/cdn.shopify.com\/s\/files\/1\/0238\/8255\/products\/dukeboards-tube.jpg?v=1371219680"},{"product_id":"phones","title":"Phones","description":"\u003cp\u003eWelsh onion pea sprouts ricebean chickweed tigernut gumbo watercress rock melon. Artichoke epazote collard greens garbanzo celery coriander quandong napa cabbage winter purslane gourd corn aubergine garlic eggplant. Bush tomato chicory avocado bitterleaf melon rutabaga okra burdock sweet pepper salad.\u003c\/p\u003e","brand":"Duke","offers":[{"title":"Default Title","offer_id":324815561,"sku":"","price":45.0,"currency_code":"GBP","in_stock":true}],"thumbnail_url":"\/\/cdn.shopify.com\/s\/files\/1\/0238\/8255\/products\/dukeboards-phones.jpg?v=1371219612"},{"product_id":"four-track","title":"Four Track","description":"\u003cp\u003eWelsh onion pea sprouts ricebean chickweed tigernut gumbo watercress rock melon. Artichoke epazote collard greens garbanzo celery coriander quandong napa cabbage winter purslane gourd corn aubergine garlic eggplant. Bush tomato chicory avocado bitterleaf melon rutabaga okra burdock sweet pepper salad.\u003c\/p\u003e","brand":"Duke","offers":[{"title":"Default Title","offer_id":324815465,"sku":"","price":35.0,"currency_code":"GBP","in_stock":true}],"thumbnail_url":"\/\/cdn.shopify.com\/s\/files\/1\/0238\/8255\/products\/dukeboards-fourtrack.jpg?v=1371219574"},{"product_id":"nixon","title":"Nixon","description":"\u003cp\u003eWelsh onion pea sprouts ricebean chickweed tigernut gumbo watercress rock melon. Artichoke epazote collard greens garbanzo celery coriander quandong napa cabbage winter purslane gourd corn aubergine garlic eggplant. Bush tomato chicory avocado bitterleaf melon rutabaga okra burdock sweet pepper salad.\u003c\/p\u003e","brand":"Duke","offers":[{"title":"Default Title","offer_id":324816505,"sku":"","price":45.0,"currency_code":"GBP","in_stock":true}],"thumbnail_url":"\/\/cdn.shopify.com\/s\/files\/1\/0238\/8255\/products\/dukeboards-nixon.jpg?v=1371219766"},{"product_id":"petty-thief","title":"Petty Thief","description":"\u003cp\u003eWelsh onion pea sprouts ricebean chickweed tigernut gumbo watercress rock melon. Artichoke epazote collard greens garbanzo celery coriander quandong napa cabbage winter purslane gourd corn aubergine garlic eggplant. Bush tomato chicory avocado bitterleaf melon rutabaga okra burdock sweet pepper salad.\u003c\/p\u003e","brand":"Duke","offers":[{"title":"Default Title","offer_id":324793211,"sku":"","price":55.0,"currency_code":"GBP","in_stock":true}],"thumbnail_url":"\/\/cdn.shopify.com\/s\/files\/1\/0238\/8255\/products\/dukeboards-pettythief.jpg?v=1371219496"}],"url":"http:\/\/duke-16.myshopify.com\/collections\/sale.oembed","provider":"DUKE","version":"1.0","type":"link"}
+@jayvib
+jayvib/go-functional-programming – config.toml
+Showing the top four matches
+Last indexed on Jul 18, 2018
+TOML
+project_root_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion"
+
+# Where files are downloaded
+download_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion/downloads"
+
+# Parent folders for the log files on Google Cloud Storage
+@siboyapati
+siboyapati/Functional-Programming-in-Go – config.toml
+Showing the top four matches
+Last indexed on Jul 12, 2018
+TOML
+project_root_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion"
+
+# Where files are downloaded
+download_dir = "/Users/lex/clients/packt/dev/fp-go/2-design-patterns/ch06-onion-arch/04_onion/downloads"
+
+# Parent folders for the log files on Google Cloud Storage
+@bdeaton
+bdeaton/unchained – listen1.php
+Showing the top four matches
+Last indexed on Jun 26, 2018
+PHP
+							<td>Text Track 1</td>
+							<td class="col-download"><audio src="audio/onion.mp3" controls="controls">Your browser does not support the audio element.</audio></td>
+							<td><a href="audio/download.php?file=onion.mp3">Download Track</a></td>
+						</tr>
+						<tr>
+							<td>Alex North</td>
+							<td>Electric Guitar</td>
+@enryu100
+enryu100/ICT398Project_BMK-Squared – animation_player_editor_plugin.h
+Showing the top four matches
+Last indexed on Oct 8, 2018
+C++
+/* Permission is hereby granted, free of charge, to any person obtaining */
+/* a copy of this software and associated documentation files (the       */
+	bool updating_blends;
+
+	AnimationTrackEditor *track_editor;
+
+	// Onion skinning
+	struct {
+		// Settings
+		bool enabled;
+@ernstmelias
+ernstmelias/recipetarget – onion_sample.xml
+Showing the top two matches
+Last indexed on Jul 13, 2018
+XML
+            <AdSystem version="2.0">ONION</AdSystem>
+            <AdTitle>In-Stream Video</AdTitle>
+            <Description>Grand Budapest Hotel_Fridays</Description>
+            <Impression><![CDATA[http://reporting.theonion.com/videoadtracker/track.gif?videoAd=176&event=impression]]></Impression>
+            <Creatives>
+@krakjoe
+krakjoe/ponion – ponion_sapi.c
+Showing the top four matches
+Last indexed on Jun 27, 2018
+C
+#include <ponion_utils.h>
+#include <ponion_sapi.h>
+
+static zend_class_entry *OnionQuery_ce = NULL,
+                        *OnionPost_ce = NULL,
+                        *OnionHeaders_ce = NULL,
+                        *OnionFiles_ce = NULL;
+@hoangnhonline
+hoangnhonline/haivl – onion_sample.xml
+Showing the top two matches
+Last indexed on Jul 2, 2018
+XML
+            <AdSystem version="2.0">ONION</AdSystem>
+            <AdTitle>In-Stream Video</AdTitle>
+            <Description>Grand Budapest Hotel_Fridays</Description>
+            <Impression><![CDATA[http://reporting.theonion.com/videoadtracker/track.gif?videoAd=176&event=impression]]></Impression>
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
